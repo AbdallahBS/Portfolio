@@ -26,9 +26,7 @@ function Contact() {
             <div className="contact-form-card">
               <h4 className="contact-title">Send a message</h4>
               <form 
-                name="contact" 
-               netlify  
-              >
+                name="contact"  method="POST" data-netlify="true">
                 <input type="hidden" name="form-name" value="contact" />
                 <div className="form-group">
                   <input className="form-control" type="text" name="name" placeholder="Name *" required />
