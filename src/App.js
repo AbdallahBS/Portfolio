@@ -1,5 +1,5 @@
-import logo from './logo.svg';
-import React, { useState, useEffect } from 'react';
+
+import React, { useState } from 'react';
 import './App.css';
 import Contact from '../src/components/contact';
 function App() {
@@ -62,7 +62,6 @@ function App() {
     };
   return (
    <div classname="App">
-  <a href="components.html" className="btn btn-primary btn-component" data-spy="affix" data-offset-top={600}><i className="ti-shift-left-alt" /> Components</a>
   <header className="header">
     <div className="container">
       <ul className="social-icons pt-3">
