@@ -3,6 +3,14 @@ import 'leaflet/dist/leaflet.css';
 
 
 function Contact() {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Simulate form submission process
+    // If successful, redirect to thank-you page
+    window.location.href = '/thank-you';
+  };
+
   return (
     <div className="section contact" id="contact" style={{ position: 'relative', overflow: 'hidden' }}>
       <MapContainer
@@ -26,7 +34,7 @@ function Contact() {
           <div className="col-lg-8">
             <div className="contact-form-card">
               <h4 className="contact-title">Send a message</h4>
-              <form name="contact" method="POST" data-netlify="true">
+              <form name="contact" method="POST" data-netlify="true" onSubmit="submit">
                 <input type="hidden" name="form-name" value="contact" />
                 <div className="form-group">
                   <input className="form-control" type="text" name="name" placeholder="Name *" required />
