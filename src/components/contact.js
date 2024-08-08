@@ -27,9 +27,7 @@ function Contact() {
               <h4 className="contact-title">Send a message</h4>
               <form 
                 name="contact" 
-                method="POST" 
-                data-netlify="true"
-                action="/thank-you"  // Redirect to the thank-you page
+               netlify  
               >
                 <input type="hidden" name="form-name" value="contact" />
                 <div className="form-group">
