@@ -1,8 +1,6 @@
 import logo from './logo.svg';
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import 'lightbox2/dist/css/lightbox.css';
-import 'lightbox2/dist/js/lightbox-plus-jquery.js';
 import Contact from '../src/components/contact';
 function App() {
 
