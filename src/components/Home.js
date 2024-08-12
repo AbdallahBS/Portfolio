@@ -434,7 +434,7 @@ function Home() {
             New 
           </a>
           <a href="#" data-filter=".advertising">
-            Advertising
+            Certificates
           </a>
          
           <a href="#" data-filter=".web">
@@ -442,7 +442,7 @@ function Home() {
           </a>
         </div>
         <div className="portfolio-container"> 
-          <div className="col-md-6 col-lg-4 web new">
+          <div className="col-md-6 col-lg-4  new">
             <div className="portfolio-item">
               <img src="assets/imgs/pres1.jpg" className="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates" />
               <div className="content-holder">
@@ -455,7 +455,7 @@ function Home() {
               </div>   
             </div>             
           </div>
-          <div className="col-md-6 col-lg-4 web new">
+          <div className="col-md-6 col-lg-4  new">
             <div className="portfolio-item">
               <img src="assets/imgs/vr1.png" className="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates" />
               <div className="content-holder">
