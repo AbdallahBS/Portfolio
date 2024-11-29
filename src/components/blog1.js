@@ -79,7 +79,7 @@ function Blog1() {
           <p>In my presentation, I focus on the types of software testing. Let's describe the importance and role of each one by watching this video.</p>
           <div className="video-container">
                 <video width="100%" controls>
-                  <source src="/My Vide1.mp4" type="video/mp4" />
+                  <source src="/My Video1.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               </div>
