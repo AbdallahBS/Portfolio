@@ -85,7 +85,7 @@ Bridging the Gap: MR, in particular, helps bridge the gap between the real and d
                 <video width="100%" controls   
 
       style={{ objectFit: 'cover' }}>
-                  <source src="/My Video.mp4" type="video/mp4" />
+                  <source src="/My Vide.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               </div>
