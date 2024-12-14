@@ -316,7 +316,7 @@ function Home() {
               <div className="m-auto"><i className="ti-linkedin icon-xl" /></div>
             </div>
             <div className="col-7 text-left py-3">
-              <h1 className="text-danger font-weight-bold font40">+350</h1>
+              <h1 className="text-danger font-weight-bold font40">+500</h1>
               <p className="text-light mb-1">LinkedIn connections </p>
             </div>
           </div>
