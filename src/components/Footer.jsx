@@ -33,10 +33,9 @@ const Footer = () => {
                         <div className="footer-section">
                             <h4>Connect</h4>
                             <nav>
-                                <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
-                                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
-                                <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer">Dribbble</a>
+                                <a href="https://github.com/AbdallahBS" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                <a href="https://www.linkedin.com/in/abdallahbensalem/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                               
                             </nav>
                         </div>
                     </div>

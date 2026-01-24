@@ -13,7 +13,7 @@ const About = () => {
                     <div className="about-text">
                         <h3>Crafting Digital Experiences with Passion</h3>
                         <p>
-                            Junior developer, recently graduated with a Bachelor’s degree in Information Technology, specializing in Information Systems Development.
+                            Junior developer, recently graduated with a Bachelor's degree in Information Technology, specializing in Information Systems Development.
                             Currently a Computer Engineering student at the National Engineering School of Carthage (ENICarthage), I am pursuing my academic journey with a strong ambition to continuously develop my technical and professional skills.
                         </p>
                         <p>

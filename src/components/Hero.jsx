@@ -63,18 +63,14 @@ const Hero = () => {
                     <h1 className="hero-name">
                         Abdallah Ben Salem
                     </h1>
-                    <p className="hero-subtitle gradient-text">CS Engineering Student @ ENIC</p>
+                    <p className="hero-subtitle gradient-text">CS Engineering Student @ ENICarthage</p>
 
-                    <div className="hero-role">
-                        <span className="role-prefix mono">&gt;</span>
-                        <span className="role-text">{text}</span>
-                        <span className="role-cursor">|</span>
-                    </div>
 
                     <p className="hero-description">
-                        Engineering student at the National School of Engineers of Carthage (ENIC),
-                        recently graduated in Information Systems Development. I craft beautiful,
-                        performant web experiences with modern technologies and a passion for clean code.
+                        Engineering student in Computer Science at the National School of Engineers of
+                        Carthage (ENICarthage), holder of a Bachelor’s degree in Information Technology
+                        with a specialization in Information Systems Development. I aim to strengthen my
+                        skills in software engineering, application development, and intelligent technologies.
                     </p>
 
                     <div className="hero-buttons">
@@ -105,10 +101,10 @@ const Hero = () => {
                             </button>
                             {showCvDropdown && (
                                 <div className="cv-dropdown">
-                                    <a href="/cv-english.pdf" download className="cv-option">
+                                    <a href="/_CV_AbdallahBENSALEM_EN.pdf" download="_CV_AbdallahBENSALEM_EN.pdf" className="cv-option">
                                         <span>🇬🇧</span> English
                                     </a>
-                                    <a href="/cv-francais.pdf" download className="cv-option">
+                                    <a href="/_CV_AbdallahBENSALEM_FR.pdf" download="_CV_AbdallahBENSALEM_FR.pdf" className="cv-option">
                                         <span>🇫🇷</span> Français
                                     </a>
                                 </div>

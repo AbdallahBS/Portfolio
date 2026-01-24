@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import emailjs from '@emailjs/browser'
 import './Contact.css'
 
 const Contact = () => {
@@ -17,12 +18,30 @@ const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
         setStatus('sending')
-        // Simulate form submission
-        setTimeout(() => {
-            setStatus('success')
-            setFormData({ name: '', email: '', subject: '', message: '' })
-            setTimeout(() => setStatus(''), 3000)
-        }, 1000)
+
+        // EmailJS configuration
+        const serviceID = 'service_35fj2qu' // Replace with your EmailJS service ID
+        const templateID = 'template_sfm8ans' // Replace with your EmailJS template ID
+        const publicKey = 'VeWf9Wzc_Idf03Zqu' // Replace with your EmailJS public key
+
+        // Send email using EmailJS
+        emailjs.send(serviceID, templateID, {
+            from_name: formData.name,
+            from_email: formData.email,
+            subject: formData.subject,
+            message: formData.message,
+            to_email: 'abdallahbenselam@gmail.com'
+        }, publicKey)
+            .then(() => {
+                setStatus('success')
+                setFormData({ name: '', email: '', subject: '', message: '' })
+                setTimeout(() => setStatus(''), 3000)
+            })
+            .catch((error) => {
+                console.error('EmailJS Error:', error)
+                setStatus('error')
+                setTimeout(() => setStatus(''), 3000)
+            })
     }
 
     const contactInfo = [
@@ -81,8 +100,8 @@ const Contact = () => {
             ),
             url: 'https://www.linkedin.com/in/abdallahbensalem/'
         },
-       
-       
+
+
     ]
 
     return (
@@ -206,6 +225,15 @@ const Contact = () => {
                                         <polyline points="20 6 9 17 4 12" />
                                     </svg>
                                     Message Sent!
+                                </>
+                            ) : status === 'error' ? (
+                                <>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <line x1="15" y1="9" x2="9" y2="15" />
+                                        <line x1="9" y1="9" x2="15" y2="15" />
+                                    </svg>
+                                    Failed! Try Again
                                 </>
                             ) : (
                                 <>
