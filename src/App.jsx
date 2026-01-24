@@ -15,7 +15,6 @@ function App() {
       <main>
         <Hero />
         <About />
-      
         <Projects />
         <Activities />
         <Contact />

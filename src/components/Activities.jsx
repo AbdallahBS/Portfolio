@@ -1,6 +1,19 @@
 import { useEffect, useRef, useState } from 'react'
 import './Activities.css'
 
+// Import activity images
+import actv1Image from '../assets/activities/actv1/act1.jpg'
+import actv1Cert from '../assets/activities/actv1/certf.png'
+
+import actv2Image1 from '../assets/activities/actv2/1.jpg'
+import actv2Image2 from '../assets/activities/actv2/2.jpg'
+import actv2Image3 from '../assets/activities/actv2/3.jpg'
+import actv2Image4 from '../assets/activities/actv2/4.jpg'
+import actv2Cert1 from '../assets/activities/actv2/certf.png'
+import actv2Cert2 from '../assets/activities/actv2/certf2.png'
+
+import actv3Image from '../assets/activities/actv3/1.PNG'
+
 const Activities = () => {
     const activitiesRef = useRef([])
     const [selectedActivity, setSelectedActivity] = useState(null)
@@ -41,14 +54,14 @@ const Activities = () => {
             id: 1,
             title: 'Cybersecurity Hackathon - 1st Place 🏆',
             description: 'Won first place at ISET Kelibia Cybersecurity Hackathon in a Capture The Flag competition.',
-            image: '/src/assets/activities/actv1/act1.jpg', // Replace with your image path
+            image: actv1Image,
             tags: ['CTF', 'Cybersecurity', 'First Place'],
             detailedContent: {
                 achievement: '1st Place Winner',
                 organization: 'ISET Kelibia',
                 eventType: 'Cybersecurity Hackathon - Capture The Flag',
                 description: `Won first place in a highly competitive Capture The Flag (CTF) cybersecurity competition organized by ISET Kélibia. The event challenged participants to solve a wide range of real-world cybersecurity problems across multiple domains, including security analysis, problem-solving, and technical exploitation, demonstrating strong teamwork and advanced technical skills.`,
-                certificate: '/src/assets/activities/actv1/certf.png',
+                certificate: actv1Cert,
 
                 toolsUsed: [
 
@@ -63,7 +76,7 @@ const Activities = () => {
             id: 2,
             title: 'ISEROBOT Hackathon - Line Follower Robot',
             description: 'Built a line follower robot with obstacle detection at ISEROBOT Edition 1, representing ISET Kelibia among 24 ISETs.',
-            image: '/src/assets/activities/actv2/3.jpg',
+            image: actv2Image3,
             tags: ['Hardware', 'Mechanical', 'Systems Thinking'],
             detailedContent: {
                 achievement: 'ISEROBOT Hackathon Participant',
@@ -71,14 +84,14 @@ const Activities = () => {
                 eventType: 'Robotics Competition',
                 description: `Participated in both ISEROBOT Edition 1 (2024) and Edition 2 (2025) hackathons organized by Iteam University, representing ISET Kelibia among 24 participating ISETs across the country. Built line follower robots equipped with obstacle detection capabilities, combining sensor integration, motor control, and real-time decision-making algorithms. These competitions were transformative experiences that deepened my understanding of robotics, embedded systems, and the importance of teamwork in solving complex engineering challenges under time constraints.`,
                 gallery: [
-                    '/src/assets/activities/actv2/3.jpg',
-                    '/src/assets/activities/actv2/2.jpg',
-                    '/src/assets/activities/actv2/1.jpg',
-                    '/src/assets/activities/actv2/4.jpg'
+                    actv2Image3,
+                    actv2Image2,
+                    actv2Image1,
+                    actv2Image4
                 ],
                 certificates: [
-                    '/src/assets/activities/actv2/certf.png',
-                    '/src/assets/activities/actv2/certf2.png'
+                    actv2Cert1,
+                    actv2Cert2
                 ],
                 challenges: [
                     'Designing and calibrating line-following sensors (IR sensors)',
@@ -105,7 +118,7 @@ const Activities = () => {
             id: 3,
             title: 'F-22 RC Model Build',
             description: 'Designed and built a remote-controlled F-22 Raptor model using Arduino, electronics, and cardboard.',
-            image: '/src/assets/activities/actv3/1.PNG',
+            image: actv3Image,
             tags: ['Engineering', 'Design', 'Problem Solving'],
             detailedContent: {
                 achievement: 'DIY RC Aircraft Project',
