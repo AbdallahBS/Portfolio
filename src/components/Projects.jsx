@@ -5,6 +5,16 @@ import arzaakImg from '../assets/arzaak.png'
 import housePredictionImg from '../assets/housePridiction.png'
 import monPfeImg from '../assets/projects/project5/2.png'
 
+// Mon PFE Gallery Images
+import monPfe1 from '../assets/projects/project5/1.png'
+import monPfe2 from '../assets/projects/project5/2.png'
+import monPfe3 from '../assets/projects/project5/3.png'
+import monPfe4 from '../assets/projects/project5/4.jpg'
+import monPfe5 from '../assets/projects/project5/5.jpg'
+import monPfe7 from '../assets/projects/project5/7.jpg'
+import monPfe8 from '../assets/projects/project5/8.jpg'
+import monPfe9 from '../assets/projects/project5/9.jpg'
+
 const Projects = () => {
     const [showModal, setShowModal] = useState(false)
     const [modalProject, setModalProject] = useState(null)
@@ -61,15 +71,14 @@ const Projects = () => {
             featured: true,
             showCustomModal: true,
             gallery: [
-                '/src/assets/projects/project5/1.png',
-                '/src/assets/projects/project5/2.png',
-                '/src/assets/projects/project5/3.png',
-                '/src/assets/projects/project5/4.jpg',
-                '/src/assets/projects/project5/5.jpg',
-
-                '/src/assets/projects/project5/7.jpg',
-                '/src/assets/projects/project5/8.jpg',
-                '/src/assets/projects/project5/9.jpg',
+                monPfe1,
+                monPfe2,
+                monPfe3,
+                monPfe4,
+                monPfe5,
+                monPfe7,
+                monPfe8,
+                monPfe9,
             ]
         },
 
